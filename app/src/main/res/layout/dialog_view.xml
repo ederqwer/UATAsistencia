@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/dialogfoto"
+        android:layout_width="215dp"
+        android:layout_height="184dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/txtdialognom"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/txtdialogmat"
+        app:layout_constraintRight_toRightOf="@+id/txtdialogmat"
+        app:layout_constraintTop_toBottomOf="@+id/txtdialogmat" />
+
+    <EditText
+        android:id="@+id/txtdialogmat"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Matricula"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogfoto" />
+
+    <Spinner
+        android:id="@+id/spdialog"
+        android:layout_width="213dp"
+        android:layout_height="44dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        android:layout_marginTop="-7dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtdialogmac" />
+
+    <Button
+        android:id="@+id/bt1"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="87dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="21dp"
+        android:text="Aceptar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spdialog" />
+
+    <Button
+        android:id="@+id/bt2"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:text="Cancelar"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/spdialog"
+        android:layout_marginRight="27dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btscan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bt"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtdialogmac"
+        app:layout_constraintLeft_toRightOf="@+id/spdialog"
+        android:layout_marginLeft="-3dp" />
+
+    <EditText
+        android:id="@+id/txtdialogmac"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="MAC ##:##:##:##:##:##"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/txtdialognom"
+        app:layout_constraintRight_toRightOf="@+id/txtdialognom"
+        app:layout_constraintTop_toBottomOf="@+id/txtdialognom" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matricula"
+        android:textSize="9dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtdialogmat"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtdialogmat" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:text="Dirección MAC ##:##:##:##:##:##"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtdialogmac"
+        app:layout_constraintLeft_toLeftOf="@+id/txtdialogmac" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="Nombre"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtdialognom"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtdialognom" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Presione para tomar foto"
+        android:textStyle="italic"
+        android:textSize="9dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialogfoto"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/dialogfoto" />
+
+    <Button
+        android:id="@+id/bt3"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="88dp"
+        android:layout_height="53dp"
+        android:text="Eliminar"
+        app:layout_constraintLeft_toRightOf="@+id/bt1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/spdialog"
+        app:layout_constraintRight_toLeftOf="@+id/bt2"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.454" />
+
+
+</android.support.constraint.ConstraintLayout>
